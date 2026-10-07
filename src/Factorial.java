@@ -2,12 +2,15 @@ public class Factorial {
 
     /*
      * Ma gia:
-     * 1. Neu n bang 0 hoac 1, tra ve 1 (dieu kien dung).
-     * 2. Neu khong, tinh n nhan voi giai thua cua n - 1.
-     * 3. De quy tiep tuc den khi cham dieu kien dung.
+     * THUAT_TOAN Factorial(n)
+     *     IF n = 0 HOAC n = 1 THEN
+     *         RETURN 1
+     *     ELSE
+     *         RETURN n * Factorial(n - 1)
+     *     END IF
+     * KET_THUC
      */
     public static long factorial(int n) {
-
         if (n == 0 || n == 1) {
             return 1;
         }

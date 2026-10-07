@@ -2,11 +2,23 @@ public class InsertionSort {
 
     /*
      * Ma gia:
-     * 1. Xem phan tu dau tien la doan mang da duoc sap xep.
-     * 2. Voi moi phan tu tiep theo, luu gia tri do vao key.
-     * 3. Doi cac phan tu lon hon key sang phai mot vi tri.
-     * 4. Chen key vao vi tri trong vua tao ra.
-     * 5. Lap lai den khi da xu ly het mang.
+     * THUAT_TOAN InsertionSort(a)
+     *     FOR i <- 1 TO DO_DAI(a) - 1 DO
+     *         key <- a[i]
+     *         j <- i - 1
+     *
+     *         WHILE j >= 0 DO
+     *             IF a[j] > key THEN
+     *                 a[j + 1] <- a[j]
+     *                 j <- j - 1
+     *             ELSE
+     *                 THOAT_VONG_LAP
+     *             END IF
+     *         END WHILE
+     *
+     *         a[j + 1] <- key
+     *     END FOR
+     * KET_THUC
      */
     public static void insertionSort(int[] a) {
         for (int i = 1; i < a.length; i++) {
@@ -21,5 +33,4 @@ public class InsertionSort {
             a[j + 1] = key;
         }
     }
-
 }
